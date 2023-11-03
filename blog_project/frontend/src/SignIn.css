@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: normal;
+}
+
+
+
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  height: 54px;
+  border-radius: 50px;
+  background: #d9d9d9;
+  border: none; 
+  padding-left: 10%;
+  margin-top: 3%;
+  color: #000;
+}
+
+.signUp{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 54px;
+  border-radius: 10px;
+  margin-top: 10%;
+  text-align:center;
+  border-bottom: 5px black;
+}
+
+.submit {
+  width: 50%;
+  border-radius: 50px;
+  margin-top: 10px;
+  margin-left: 60%;
+  cursor: pointer;
+  border-color: none;
+  background:gray;  
+  transition:0.5s;
+}
+
+.on:hover {
+  background-color: #67a05d !important;
+  color: #000;
+}
+
+
+.form:hover {
+  background-color: #a7a7a7a0;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 80px;
+    width: 100%;
+  }
+
+  .formBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    width: 85%;
+  }
+
+  .submit {
+    margin-left: 35%;
+    width: 50%;
+  }
+}
+
+#errMsg {
+  color:red;
+  text-align:center;
+}
+
+.on {
+  background-color:#000 !important;
+  color: #67a05d;
+  transition:0.5s;
+}

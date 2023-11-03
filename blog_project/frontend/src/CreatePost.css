@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: normal;
+}
+
+
+.form-wrapper {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.cForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.cTitle,
+.cDesc,
+.cText {
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+
+}
+.cText{
+width:98% !important;
+height: 400px !important;
+}
+
+
+.cTitle::placeholder,
+.cDesc::placeholder,
+.cText::placeholder {
+  color: #999;
+}
+
+.btn {
+  background:gray;  
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition:0.5s;
+}

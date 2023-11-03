@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Noto Sans", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    justify-content: space-between;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    font-weight: 600;
+}
+
+.right {
+    display: flex;
+
+}
+
+.img {
+
+    background-repeat: no-repeat;
+    background-size: 250px;
+
+    background-image: url("/logo.png");
+    width: 190px;
+    height: 100px;
+    background-position: center;
+}
+
+@media (max-width:480px) {
+    .img {
+        background-image: url("/smollogo.png");
+    }
+
+    header {
+        justify-content: center;
+
+    }
+
+    .profile {
+        margin: 0px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.nav {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 100px;
+    color: white;
+    margin: 0px 50px 0px 50px;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+}
+
+.nav:hover {
+    background-color: #67A05D;
+}
+
+.profile {
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    background-color: azure;
+}
+
+
+
+.blogsDisplay {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 5%;
+    width: 100%;
+    justify-content:space-evenly;
+
+}
+
+.blog:hover {
+    background: #67A05D !important;
+
+}
+
+.blog {
+    width: 30vw;
+    color: #000;
+    text-align: center;
+    background:#e5e5e5;
+    margin-bottom:30px;
+}
+
+.blog img{
+align-self: center;
+height: 200px;
+margin-top: 10px;
+}
+
+
+/* .blog h1 {
+    font-size: 24px; 
+  }
+  
+  .blog h2 {
+    font-size: 18px; 
+  }
+  
+  .blog p {
+    font-size: 16px; 
+  } */
+
+.hph1 {
+    font-size:40px;
+    margin-top:15px;
+}
+.hph2 {
+    font-size:20px;
+    margin-top:-30px;
+}
+.hpp {
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+.dispContainer {
+    margin-top:25px;
+
+}
+.dispContainer div{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.dispContainer img{
+    align-self: center;
+    min-width: 40vh;
+    max-width: 80vh;
+    max-height: 50vh;
+    
+}
+.dispTitle {
+    font-size:70px;
+    text-align:center;
+}
+.dispAuthor {
+    font-size:25px;
+    color:rgb(78, 78, 78);
+    text-align:center;
+    margin-top:-10px;
+}
+.dispText {
+    font-size:20px;
+    width:80vw;
+    margin-left:10vw;
+}
